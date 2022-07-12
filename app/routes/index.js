@@ -9,6 +9,7 @@ import SignIn from './pages/sign-in';
 import { SandboxedRoute } from '../components/SandboxedRoute';
 import InvoiceRoutes from './invoices';
 import { PageNotImplemented } from '../components/PageNotImplemented';
+import Praksa from './praksa';
 
 export default () => (
    <cx>
@@ -25,6 +26,11 @@ export default () => (
             <SandboxedRoute route="~/dashboard">
                <Dashboard />
             </SandboxedRoute>
+
+            <SandboxedRoute route="~/praksa">
+               <Praksa />
+            </SandboxedRoute>
+
             <Route route="~/customers" url-bind="url" prefix>
                <PageNotImplemented />
             </Route>
