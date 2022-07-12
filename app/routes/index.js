@@ -1,15 +1,17 @@
 import { ContentResolver, FirstVisibleChildLayout } from 'cx/ui';
-import { DocumentTitle, PureContainer, RedirectRoute, Route } from 'cx/widgets';
-import About from './about';
-import Widgets from './widgets';
-import Pages from './pages';
-import Dashboard from './dashboard';
-import { CheckerLayout } from '../layout/CheckerLayout';
-import SignIn from './pages/sign-in';
-import { SandboxedRoute } from '../components/SandboxedRoute';
-import InvoiceRoutes from './invoices';
+import { DocumentTitle, RedirectRoute, Route } from 'cx/widgets';
 import { PageNotImplemented } from '../components/PageNotImplemented';
+import { SandboxedRoute } from '../components/SandboxedRoute';
+import { CheckerLayout } from '../layout/CheckerLayout';
+import About from './about';
+import Article from './article';
+import Articles from './articles';
+import Dashboard from './dashboard';
+import InvoiceRoutes from './invoices';
+import Pages from './pages';
+import SignIn from './pages/sign-in';
 import Praksa from './praksa';
+import Widgets from './widgets';
 
 export default () => (
    <cx>
@@ -29,6 +31,14 @@ export default () => (
 
             <SandboxedRoute route="~/praksa">
                <Praksa />
+            </SandboxedRoute>
+
+            <SandboxedRoute route="~/articles">
+               <Articles />
+            </SandboxedRoute>
+
+            <SandboxedRoute route="~/articles/:id">
+               <Article />
             </SandboxedRoute>
 
             <Route route="~/customers" url-bind="url" prefix>

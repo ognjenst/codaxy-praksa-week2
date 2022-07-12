@@ -17,6 +17,7 @@ import {
    DocumentTextIcon,
    ExclamationIcon,
    InformationCircleIcon,
+   NewspaperIcon,
    PencilIcon,
    PlusIcon,
    PresentationChartBarIcon,
@@ -96,3 +97,5 @@ Icon.register('arrow-left', (props) => <ArrowLeftIcon {...props} />);
 Icon.register('printer', (props) => <PrinterIcon {...props} />);
 
 Icon.register('pencil', (props) => <PencilIcon {...props} />);
+
+Icon.register('newspaper', (props) => <NewspaperIcon {...props} />);
