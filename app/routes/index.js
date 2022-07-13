@@ -11,6 +11,7 @@ import InvoiceRoutes from './invoices';
 import Pages from './pages';
 import SignIn from './pages/sign-in';
 import Praksa from './praksa';
+import Products from './products';
 import Widgets from './widgets';
 import Window from './window';
 
@@ -32,6 +33,10 @@ export default () => (
 
             <SandboxedRoute route="~/window">
                <Window />
+            </SandboxedRoute>
+
+            <SandboxedRoute route="~/products">
+               <Products />
             </SandboxedRoute>
 
             <SandboxedRoute route="~/praksa">
