@@ -1,4 +1,4 @@
-import { bind } from 'cx/ui';
+import { bind, KeySelection } from 'cx/ui';
 import { Grid, Rescope } from 'cx/widgets';
 
 import { getColumns } from './columns';
@@ -21,6 +21,11 @@ export default () => (
                      showCaption: true,
                   },
                ]}
+               selection={{
+                  type: KeySelection,
+                  bind: 'selection',
+                  multiple: true,
+               }}
             />
          </div>
       </Rescope>
