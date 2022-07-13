@@ -57,6 +57,8 @@ export const Navigation = ({ name }) => (
       <div class="border-r pt-3">
          <div class="px-6 py-3 text-gray-400 text-sm">Main Menu</div>
 
+         <NavItem text="Window" icon="desktop-computer" href="~/window" />
+
          <NavItem text="Articles" icon="newspaper" href="~/articles" />
          <NavItem text="Praksa" icon="user" href="~/praksa" />
 

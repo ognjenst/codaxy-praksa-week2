@@ -13,6 +13,7 @@ import {
    CreditCardIcon,
    CurrencyDollarIcon,
    CurrencyEuroIcon,
+   DesktopComputerIcon,
    DocumentReportIcon,
    DocumentTextIcon,
    ExclamationIcon,
@@ -99,3 +100,5 @@ Icon.register('printer', (props) => <PrinterIcon {...props} />);
 Icon.register('pencil', (props) => <PencilIcon {...props} />);
 
 Icon.register('newspaper', (props) => <NewspaperIcon {...props} />);
+
+Icon.register('desktop-computer', (props) => <DesktopComputerIcon {...props} />);

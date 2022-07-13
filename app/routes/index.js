@@ -12,6 +12,7 @@ import Pages from './pages';
 import SignIn from './pages/sign-in';
 import Praksa from './praksa';
 import Widgets from './widgets';
+import Window from './window';
 
 export default () => (
    <cx>
@@ -27,6 +28,10 @@ export default () => (
          <CheckerLayout>
             <SandboxedRoute route="~/dashboard">
                <Dashboard />
+            </SandboxedRoute>
+
+            <SandboxedRoute route="~/window">
+               <Window />
             </SandboxedRoute>
 
             <SandboxedRoute route="~/praksa">
